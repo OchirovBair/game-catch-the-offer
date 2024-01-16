@@ -30,29 +30,29 @@ export const data = {
         arrayOfPointsToWin: [
             {
                 id: 21,
-                pointsToWin: 3,
+                pointsToWin: 5,
             },
             {
                 id: 22,
-                pointsToWin: 4,
+                pointsToWin: 10,
             },
             {
                 id: 23,
-                pointsToWin: 5,
+                pointsToWin: 15,
             },
         ],
         arrayOfMaximumMisses: [
             {
                 id: 31,
-                maximumMisses: 3,
+                maximumMisses: 5,
             },
             {
                 id: 32,
-                maximumMisses: 4,
+                maximumMisses: 10,
             },
             {
                 id: 33,
-                maximumMisses: 50,
+                maximumMisses: 15,
             },
         ],
         arrayOfDecreaseDeltaInMs: [
