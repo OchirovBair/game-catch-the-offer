@@ -1,3 +1,5 @@
+import { RefreshButton } from "../refreshButton/refreshButton.component.js";
+
 export function Lose(score) {
 
     const container = document.createElement('div');
@@ -21,6 +23,12 @@ export function Lose(score) {
     const spanElement3 = document.createElement('span');
     spanElement3.innerText = "Miss " + score.missedCount;
     textContainer.append(spanElement3);
+
+    const buttonContainer = document.createElement('div');
+    buttonContainer.classList.add('buttonContainer');
+    const button = RefreshButton();
+    buttonContainer.append(button);
+    textContainer.append(buttonContainer);
     
     container.append(textContainer);
     

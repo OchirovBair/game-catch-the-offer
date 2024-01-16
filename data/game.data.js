@@ -1,5 +1,6 @@
 import { Lose } from "../UI/endPage/lose/lose.component.js";
 import { Win } from "../UI/endPage/win/win.component.js";
+
 import { notify } from "./subscribe/subscribe.component.js";
 
 export const offerStatuses = {
@@ -88,7 +89,12 @@ export const data = {
     }
 }
 
-
+const startIdStatuses = {
+    gridSizeId: data.settings.gridSizes[0].id,
+    pointsToWinId: data.settings.arrayOfPointsToWin[0].id,
+    maximumMissesId: data.settings.arrayOfMaximumMisses[0].id,
+    decreaseDeltaInMsId: data.settings.arrayOfDecreaseDeltaInMs[0].id,
+}
 
 
 export let defaultIdStatuses = {
@@ -113,14 +119,15 @@ export function setDecreaseDeltaInMsId(id) {
 
 
 
-
+export function restartGame() {
+    defaultIdStatuses = {...startIdStatuses};
+}
 
 
 
 let stepIntervalID
 
 export function runFirstStep() {
-    
     missOffer();
     moveOfferToRandomPosition()
     notify();
@@ -198,14 +205,3 @@ export function catchOffer() {
 function getRandom(number) {
     return Math.floor(Math.random() * (number));
 }
-
-// export function ChosenSelect() {
-//     const selectedId = selectContainer.options[selectContainer.selectedIndex].id;
-//     for (let i = 0; i < data.settings.gridSizes.length; i++) {
-//         const valueOfGrid = null;
-//         if (data.settings.gridSizes[i].id === selectedId) {
-//             valueOfGrid = data.settings.gridSizes[i]
-//         }
-//         return valueOfGrid;
-//     }
-// }

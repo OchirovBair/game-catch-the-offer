@@ -1,7 +1,4 @@
 import { runFirstStep } from "../../../data/game.data.js";
-// import { renderGamePage } from "../../../index.js";
-// import { Game } from "../../game/game.component.js";
-
 
 export function StartButton() {
 
