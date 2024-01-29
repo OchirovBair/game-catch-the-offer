@@ -1,7 +1,8 @@
 import {
     data,
-    offerStatuses} from "../data/game.data.js";
-import { subscribe } from "../data/subscribe/subscribe.component.js";
+    offerStatuses,
+    subscribe} from "../data/game.data.js";
+
 
 export function Player() {
     const catchAudio = new Audio();

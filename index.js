@@ -1,6 +1,6 @@
 import { Game } from "./UI/game/game.component.js"
 import { StartPage } from "./UI/startPage/start.component.js"
-import { subscribe } from "./data/subscribe/subscribe.component.js";
+import { subscribe } from "./data/game.data.js";
 import { Player } from "./sounds/missAndCatchPlayer.js"
 
 

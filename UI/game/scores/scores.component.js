@@ -1,5 +1,5 @@
-import {data, winGame, loseGame, defaultIdStatuses} from "../../../data/game.data.js"
-import { subscribe } from "../../../data/subscribe/subscribe.component.js";
+import {data, winGame, loseGame, defaultIdStatuses, subscribe} from "../../../data/game.data.js"
+
 
 export function Scores() {
     let maxPoints = null;

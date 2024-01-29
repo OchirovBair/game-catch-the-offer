@@ -1,8 +1,6 @@
 import { Lose } from "../UI/endPage/lose/lose.component.js";
 import { Win } from "../UI/endPage/win/win.component.js";
 
-import { notify } from "./subscribe/subscribe.component.js";
-
 export const offerStatuses = {
     default: 'default',
     missed: 'missed',
@@ -205,3 +203,17 @@ export function catchOffer() {
 function getRandom(number) {
     return Math.floor(Math.random() * (number));
 }
+
+
+let subscribers = [];
+
+export function subscribe(newSubscriber) {
+    subscribers.push(newSubscriber);
+}
+
+function notify() {
+    subscribers.forEach(subscriber => {
+        subscriber()
+    });
+
+};
