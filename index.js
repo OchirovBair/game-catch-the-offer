@@ -4,7 +4,7 @@ import { subscribe } from "./data/game.data.js";
 import { Player } from "./sounds/missAndCatchPlayer.js"
 
 
-
+const a = 0;
 Player();
 
 
